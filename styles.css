@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1DB954;
+}
+
+.upload-form {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.upload-form h2 {
+    margin-bottom: 15px;
+    color: #1DB954;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #b3b3b3;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #3E3E3E;
+    border-radius: 4px;
+    color: #fff;
+}
+
+button {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1ed760;
+}
+
+.playlist {
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.playlist h2 {
+    margin-bottom: 15px;
+    color: #1DB954;
+}
+
+.song-list {
+    list-style: none;
+}
+
+.song-item {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    align-items: center;
+}
+
+.song-item:last-child {
+    border-bottom: none;
+}
+
+.song-info {
+    flex: 1;
+}
+
+.song-title {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.song-artist, .song-description {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}
+
+.controls {
+    margin-left: 20px;
+}
+
+.play-btn {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-container {
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.current-playing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.song-details {
+    flex: 1;
+}
+
+.audio-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.status-message {
+    background-color: #1DB954;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.status-message.show {
+    opacity: 1;
+}
+
+.creator-only {
+    display: none;
+}
+
+.is-creator .creator-only {
+    display: block;
+}
+
