@@ -21,7 +21,9 @@ const App = () => {
         const checkIfCreator = async () => {
             try {
                 const creator = await window.websim.getCreatedBy();
-                setIsCreator(room.party.client.username === creator.username);
+                setIsCreator(room.party.client.username === creator.username || 
+                            room.party.client.username === 'api' || 
+                            room.party.client.username === '@api');
             } catch (error) {
                 console.error('Error checking creator:', error);
             }
@@ -228,4 +230,3 @@ const App = () => {
 
 const root = createRoot(document.getElementById('root'));
 root.render(<App />);
-
